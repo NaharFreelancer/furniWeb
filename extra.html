@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Custom Navbar</title>
+    <link rel="stylesheet" href="./assests/style-2.css">
+    <link rel="stylesheet" href="./assests/responsive.css">
+    <link rel="stylesheet" href="./assests/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Start Here -->
+    <div class="header__section">
+      <div class="container">
+        <div class="header__area">
+          <div class="nav__bar">
+            <div class="logo__section">
+              <a href="index.html">
+                <img class="img-fluid" src="./images/furni-logo.png" alt="Logo">
+              </a>
+            </div>
+            <div class="nav__middle">
+              <ul>
+                <li><a class="active"
+                        href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+              </ul>
+            </div>
+            <div class="nav__right">
+                <a href="#"><button type="button"
+                    class="btn_cart">Cart <i
+                    class="fa-solid fa-cart-shopping"></i></button></a>
+
+            </div>
+            
+            <div class="menuIcon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End Here -->
+
+    <!-- mobile menu -->
+    <div class="mobile__menu">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <img src="./images/furni-logo.png" alt="logo">
+        <span class="crossBtn fs-3 text-white"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+      <ul>
+        <li><a class="active"
+            href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#"><button type="button"
+        class="btn_cart">Cart <i
+        class="fa-solid fa-cart-shopping"></i></button></a></li>
+      </ul>
+    </div>
+    <!-- mobile menu -->
+
+    <div class="header-section">
+        <div class="container">
+            <div class="header-area">
+                <div class="logo">
+                    <a href="index.html"><img class="img-fluid" src="./images/furni-logo.png" alt="logo"></a>
+                </div>
+                <div class="menu">
+                    <div class="navbar">
+                        <ul class="sidebar">
+                            <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#"><button type="button" class="btn-cart">Cart <i class="fa-solid fa-cart-shopping"></i></button></a></li>
+            
+                        </ul>
+                    </div>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="#"><img class="img-fluid" src="./images/furni-logo.png" alt="logo"></a></li>
+                            <li class="hideOnMobile"><a href="#">Home</a></li>
+                            <li class="hideOnMobile"><a href="#">About Us</a></li>
+                            <li class="hideOnMobile"><a href="#">Shop</a></li>
+                            <li class="hideOnMobile"><a href="#">Blog</a></li>
+                            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+                            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </div>  
+        
+      
+                </div>
+                <div class="cart">
+                    <a class="hideOnMobile" href="#"><button type="button" class="btn-cart">Cart <i class="fa-solid fa-cart-shopping"></i></button></a>
+            </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <!-- Navbar Start -->
+      <div class="header-area">
+        <div class="container">
+        </div>  
+      </div>
+      <!-- Navbar End -->
+      <!-- Hero-Section Start -->
+      <div class="hero_section">
+        <div class="container">
+            <div class="hero-area">
+                <div class="color">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title"> Discovering the Best Furniture for Your Home</h1>
+                    </div>
+                    <div class="col-lg-6">
+      
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+      </div>
+      
+      <!-- Hero-Section End -->
+      
+
+    <script src="./assests/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

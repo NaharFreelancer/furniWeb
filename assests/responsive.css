@@ -1,0 +1,54 @@
+/* menu bar */
+
+@media screen and (max-width: 1399px) {
+    .nav__middle ul li{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .menuIcon{
+        display: block;
+    }
+    .nav__middle, .nav__right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .mobile__menu{
+        width: 100%;
+    }
+}
+
+
+/* Navbar End */
+
+@media screen and (max-width: 1024px){
+    .navbar-cus ul {
+        
+        padding-left: 30px;
+    }
+    
+}
+
+
+@media (max-width:991px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;  
+      }
+  
+}
+@media (max-width:425px) {
+    .sidebar{
+        width: 100%;
+    }
+    .fa-bars, .fa-xmark{
+        font-size: 20px;
+    }
+
+    
+}

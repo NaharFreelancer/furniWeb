@@ -1,0 +1,427 @@
+.main_section {
+  background: var(
+    --Linear-Color-02,
+    linear-gradient(188deg, #f6f6ef 3.29%, #e9eadd 96.52%)
+  );
+  position: relative;
+}
+.header__section {
+  border-bottom: 1px solid #ede7e7;
+}
+
+/* =====Navbar Start =====*/
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 0px;
+}
+.nav__middle a.active {
+  color: #181818;
+  font-weight: bold;
+}
+.nav__middle a:hover {
+  color: #181818;
+}
+.nav__middle ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__middle ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #8e8e8e;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* menu bar */
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  position: absolute;
+  height: 100vh;
+  background: #8e8e8e;
+  width: 50%;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  position: fixed;
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+.mobile__menu ul li {
+  margin-bottom: 25px;
+}
+
+.mobile__menu ul li a {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.crossBtn {
+  cursor: pointer;
+}
+
+/* =============navbar END=========== */
+/* =============hero section start=========== */
+.hero_section {
+  /* background: var(--Linear-Color-02, linear-gradient(188deg, #F6F6EF 3.29%, #E9EADD 96.52%)); */
+  position: relative;
+  overflow: hidden;
+  padding: 106px 0 135px 0;
+}
+.color {
+  height: 400px;
+  width: 400px;
+  /* background-image: radial-gradient(closest-side, #f9fbba, #ffffff); */
+  background-image: radial-gradient(
+    closest-side,
+    rgba(249, 251, 186, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  top: 5px;
+  left: 69%;
+}
+.hero-title {
+  color: var(--Neutral-01, #181818);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 150%; /* 105px */
+  text-transform: uppercase;
+}
+.hero-text {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin: 24px 0 48px 0;
+  position: relative;
+  overflow: hidden;
+}
+.btn-group {
+  display: flex;
+  gap: 24px;
+}
+.color-2 {
+  height: 400px;
+  width: 400px;
+  /* background-image: radial-gradient(closest-side, #FFB800, #ffffff); */
+  background-image: radial-gradient(
+    closest-side,
+    rgb(230 208 148 / 50%),
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  bottom: -100px;
+  left: 35%;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+.slick-dots button {
+  display: none;
+}
+
+li.slick-active {
+  background: #eff422 !important;
+}
+/* override css */
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: none;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.shape {
+  color: #eff422;
+}
+/* =============hero section END=========== */
+
+/* =========marquee looping css start =========*/
+
+/* Container to hold the scrolling text */
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: black; /* Black background color */
+  padding: 27px; /* Padding of 27px on all sides */
+}
+
+/* The scrolling text */
+.scrolling-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: var(--Neutral-08, #fff); /* Text color */
+  text-align: center; /* Center-align text */
+  font-family: Urbanist; /* Font family */
+  font-size: 60px; /* Font size */
+  font-style: italic; /* Font style */
+  font-weight: 500; /* Font weight */
+  line-height: normal; /* Line height */
+  text-transform: capitalize; /* Text transform */
+  animation: scrollText 20s linear infinite; /* Adjust duration for slower animation */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*========= marquee looping css end =====*/
+
+/* =======change section css start ======*/
+.change_section {
+  padding: 120px 0;
+  background: #e3e3d5;
+}
+.description {
+  padding-left: 120px;
+}
+.change-title {
+  padding: 60px 0 20px 0px;
+  color: var(--Neutral-01, #181818);
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.change-text {
+  color: var(--Neutral-02, #4d4d4d);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  padding: 0px 0 33px 0px;
+}
+
+/* //change slider css */
+button.slick-prev.slick-arrow {
+  position: absolute;
+  left: 92%;
+  top: 580px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #181818;
+  color: #181818 !important;
+  z-index: 999;
+}
+/* override */
+.slick-prev:before,
+.slick-next:before {
+  color: #181818;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before:hover {
+  color: #181818;
+}
+/* override */
+
+button.slick-next.slick-arrow {
+  position: absolute;
+  right: 0px;
+  top: 580px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eff422;
+  border: 1px solid #eff422;
+  color: #181818;
+  z-index: 999;
+}
+
+button.slick-next.slick-arrow:hover {
+  background: #4d4d4d;
+  border: none;
+  color: #fff;
+}
+
+button.slick-prev.slick-arrow:hover {
+  background: #4d4d4d;
+  border: none;
+  color: #fff;
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+}
+
+/* =======change section css end ======*/
+/* =======featured section css start ======*/
+.featured_section {
+  background-color: #fff;
+  padding: 170px 0 35px 0;
+}
+.featured_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-text {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px; /* 170% */
+  padding: 46px 0 20px 0;
+}
+.feature-card {
+  position: relative;
+}
+.feature-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =======featured section css end ======*/
+/* =======seller section css start ======*/
+.seller_section {
+  padding: 100px 0 0px 0;
+}
+.seller-text {
+  padding-top: 36px;
+}
+/* =======seller section css end ======*/
+/* =======brand section css start ======*/
+.brand_section {
+  /* background-color: #e3e3d5; */
+  background: linear-gradient(270deg, #fff 47%, #e3e3d5 0);
+  margin: 120px 0;
+  padding: 62px 0;
+}
+
+.brand-text {
+  padding: 12px 0 32px 0;
+}
+.counter-text {
+  padding: 10px 0 32px 0;
+}
+.right {
+  position: relative;
+}
+
+.right::after {
+  position: absolute;
+  width: 1px;
+  height: 74px;
+  content: "";
+  z-index: 3;
+  top: 10%;
+  right: 30px;
+  background-color: #aba4a4;
+}
+
+/* =======brand section css end ======*/
+/* =======feature week section css start ======*/
+
+.week-slider-text {
+  padding: 33px 0 15px 0;
+}
+/* =======feature week section css end ======*/
+/* =======testimonial section css start ======*/
+
+.testimonial_section {
+  padding: 120px 0;
+}
+.testimonial-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.tst-img {
+  border-radius: 0 21px 21px 0;
+}
+.quote {
+  padding: 0px 0 6px 0px;
+}
+.quote-text {
+  padding: 0 0 69px 0;
+}
+.quote-text-2 {
+  padding: 0 0 34px 0;
+}
+.content-info {
+  border-radius: 21px 0 0 21px;
+  background: #f7f7f7;
+  padding: 60px 0 38px 32px;
+  margin-bottom: 100px;
+}
+.quote {
+  padding-bottom: 40px;
+}
+.client {
+  padding: 0 0 40px 0px;
+}
+.rating {
+  padding-bottom: 10px;
+}
+
+/* =======testimonial section css end ======*/
+/* =======contact section css start ======*/
+.contact_area {
+  background-image: url(../images/contact-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  padding: 174px 0 174px 91px;
+  margin-bottom: 120px;
+}
+.contact-btn {
+  margin-top: 32px;
+}
+/* =======contact section css end ======*/
