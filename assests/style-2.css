@@ -1,5 +1,31 @@
-.header-area{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  .sidebar {
+    width: 100%;
+  }
+  .fa-bars,
+  .fa-xmark {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .navbar-cus ul {
+      
+      padding-left: 30px;
+  }
+  
 }

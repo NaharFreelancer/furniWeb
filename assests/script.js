@@ -9,27 +9,19 @@ function hideSidebar() {
   sidebar.style.display = "none";
 }
 
-
 // nav bar js
-let menuIcon = document.querySelector('.menuIcon')
-let crossBtn = document.querySelector('.crossBtn')
+let menuIcon = document.querySelector(".menuIcon");
+let crossBtn = document.querySelector(".crossBtn");
 // let crossBtn = document.getElementsByClassName('crossBtn')
-let mobile__menu = document.querySelector('.mobile__menu')
+let mobile__menu = document.querySelector(".mobile__menu");
 
-menuIcon.addEventListener('click', function(){
-    mobile__menu.classList.toggle('open')
-})
+menuIcon.addEventListener("click", function () {
+  mobile__menu.classList.toggle("open");
+});
 
-crossBtn.addEventListener('click', function(){
-    mobile__menu.classList.remove('open')
-})
-
-
-
-
-
-
-
+crossBtn.addEventListener("click", function () {
+  mobile__menu.classList.remove("open");
+});
 
 // function hideSidebar() {
 //     const sidebar = document.querySelector('.sidebar');
@@ -158,6 +150,32 @@ $(".week-slider").slick({
   focusOnSelect: true,
   slidesToShow: 4,
   slidesToScroll: 4,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 // ========feature week section slider end/=====/
 
@@ -168,7 +186,7 @@ $(".testimonial-slider").slick({
   speed: 300,
   centerPadding: "30px",
   spaceBetween: 30,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   arrows: false,
 
@@ -176,8 +194,8 @@ $(".testimonial-slider").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true,
       },
@@ -185,7 +203,7 @@ $(".testimonial-slider").slick({
     {
       breakpoint: 800,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },

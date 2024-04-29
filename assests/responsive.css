@@ -1,54 +1,478 @@
-/* menu bar */
+/* menu bar start*/
 
 @media screen and (max-width: 1399px) {
-    .nav__middle ul li{
-        padding: 0 10px;
-    }
+  .nav__middle ul li {
+    padding: 0 10px;
+  }
 }
 
-@media screen and (max-width: 1199px){
-    .menuIcon{
-        display: block;
-    }
-    .nav__middle, .nav__right{
-        display: none;
-    }
+@media screen and (max-width: 1199px) {
+  .menuIcon {
+    display: block;
+  }
+  .nav__middle,
+  .nav__right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    .mobile__menu{
-        width: 100%;
-    }
+  .mobile__menu {
+    width: 100%;
+  }
 }
-
 
 /* Navbar End */
 
-@media screen and (max-width: 1024px){
-    .navbar-cus ul {
-        
-        padding-left: 30px;
-    }
-    
+@media screen and (max-width: 1024px) {
+  .hero_section {
+    padding: 80px 0;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
+  .hero-title img {
+    display: none;
+  }
+  .hero-text {
+    font-size: 17px;
+    margin: 24px 0 42px 0;
+  }
+  .scrolling-text {
+    font-size: 40px;
+  }
+  .change_section {
+    padding: 100px 0;
+  }
+  .change-title {
+    padding: 50px 0 17px 0px;
+    font-size: 37px;
+  }
+  .change-text {
+    font-size: 15px;
+    padding: 0px 0 30px 0px;
+  }
+  .btn_light {
+    padding: 10px 25px;
+  }
+  .button {
+    font-size: 16px;
+  }
+  button.slick-prev.slick-arrow {
+    left: 88%;
+    top: 470px;
+    width: 40px;
+    height: 40px;
+  }
+  button.slick-next.slick-arrow {
+    right: 17px;
+    top: 470px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .description {
+    padding-left: 10px;
+}
+  .featured_section {
+    padding: 100px 0px 35px;
+  }
+  .fs-50 {
+    font-size: 40px;
+    letter-spacing: 0.5px;
+  }
+  .feature-text {
+    font-size: 18px;
+    padding: 30px 0 20px 0;
+  }
+  .brand_section {
+    margin: 80px 0;
+  }
+  .fs-16 {
+    font-size: 14px;
+  }
+  .fs-30 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+  .seller-text {
+    padding-top: 30px;
+  }
+  .fs-24 {
+    font-size: 22px;
+  }
+  .fs-24-light {
+    font-size: 18px;
+  }
+  .fs-20 {
+    font-size: 18px;
+  }
+  .fs-20-light {
+    font-size: 16px;
+  }
+  .testimonial-title {
+    padding-bottom: 65px;
+  }
+  .testimonial_section {
+    padding: 100px 0;
+  }
+  .fs-24-thin {
+    font-size: 16px;
+  }
+  .quote {
+    padding: 0px 0 15px 0px;
+    width: 45px;
+  }
+  .quote-text {
+    padding: 0 0 56px 0;
+  }
+  .rating {
+    padding-bottom: 10px;
+    width: 100px;
+  }
+  .content-info {
+    padding: 30px 0 30px 30px;
+    margin-bottom: 80px;
+  }
+  .fs-28 {
+    font-size: 25px;
+  }
+  .client {
+    padding: 0 0 20px 0px;
+  }
+  .slick-dots {
+    gap: 8px;
+  }
+  .contact-title {
+    padding: 100px 0 32px 60px;
+  }
+  .fs-80 {
+    font-size: 60px;
+  }
+  .contact-btn {
+    margin: 0px 0 100px 60px;
+  }
+  .contact_area {
+    margin-bottom: 100px;
+  }
+  .footer__section {
+    padding: 80px 0;
+  }
+  .footer-logo-text {
+    font-size: 15px;
+  }
+  .footer-menu {
+    gap: 10px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .nav__bar {
+    padding: 10px 0px;
+  }
+  .hero_section {
+    padding: 50px 0;
+  }
+  .hero-title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero-text {
+    font-size: 17px;
+    margin: 18px 0 38px 0;
+    text-align: center;
+  }
+  .btn-group {
+    gap: 15px;
+    justify-content: center;
+  }
+ .change-slide-img{
+  display: none;
+ }
+  .featured_section {
+    padding: 90px 0px 30px;
+  }
+  .fs-50 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  .feature-text {
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .featured_area {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .seller_section {
+    padding: 80px 0 0px 0;
+  }
+  .seller-title {
+    padding-bottom: 30px;
+  }
+  .seller_area {
+    padding-bottom: 50px;
+  }
+  .brand_section {
+    background: linear-gradient(360deg, #fff 32%, #e3e3d5 0);
+    margin: 80px 0;
+    padding: 60px 0 0 0;
+  }
+  .brand-title {
+    margin-top: 120px;
+    font-size: 36px !important;
+  }
+  .brand-info {
+    padding-left: 10px !important;
+  }
+  .brand-text {
+    text-align: center;
+  }
+  .counter-info {
+    text-align: center;
+  }
+  .brand-text {
+    padding: 12px 0 40px 0;
+  }
+  .week-title {
+    padding-bottom: 30px;
+  }
+  .testimonial_section {
+    padding: 90px 0;
+  }
+  .client {
+    width: 60px;
+    height: 80px;
+  }
+  .fs-28 {
+    font-size: 20px;
+  }
+  .quote-text {
+    padding: 0 0 46px 0;
+  }
+  .quote {
+    padding: 0px 0 10px 0px;
+    width: 20px;
+  }
+  .content-info {
+    padding: 21px 15px;
+  }
+  .quote-text-2 {
+    padding: 0 0 7px 0;
+  }
+  .rating {
+    padding-bottom: 5px;
+  }
+  .fs-24-thin {
+    font-size: 13px;
+  }
+  .fs-80 {
+    font-size: 50px;
+  }
+  .contact-title {
+    padding: 60px 0 25px 60px;
+  }
+  .footer-logo-text {
+    font-size: 14px;
+  }
+  .footer-menu {
+    font-size: 14px;
+  }
+  .social-media {
+    gap: 18px;
+    font-size: 16px;
+    margin-top: 22px;
+    padding: 8px;
+  }
+  .footer__section {
+    padding: 60px 0;
+  }
+  button.slick-prev.slick-arrow {
+    left: 85%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo__section img {
+    max-width: 85%;
+  }
+  .content-info {
+    padding: 36px 18px;
+  }
+  .hero-title {
+    font-size: 37px;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .featured_section {
+    padding: 70px 0px 30px;
+  }
+  .fs-50 {
+    font-size: 30px;
+  }
+  .seller_section {
+    padding: 50px 0 0px 0;
+  }
+  .brand_section {
+    margin: 60px 0;
+  }
+  .fs-80 {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+  }
+  .contact-title {
+    padding: 40px 0 20px 20px;
+  }
+  .contact-btn {
+    margin: 0px 0 60px 20px;
+  }
+  .testimonial_section {
+    padding: 70px 0;
+  }
+  .contact_area {
+    margin-bottom: 80px;
+  }
+  .change-slide-img-2{
+    display: none;
+  }
+  .description {
+    padding-bottom: 20px;
+}
+button.slick-next.slick-arrow {
+  top: 587px;
+}
+button.slick-prev.slick-arrow {
+  left: 72%;
+  top: 587px;
+
+}
+.change_section {
+  padding: 80px 0;
+}
+.brand-img-1{
+  display: none;
+}
+.brand_section {
+  background: linear-gradient(360deg, #fff 42%, #e3e3d5 0);
+}
+.right::after {
+  width: 74px;
+  height: 1px;
+  top: 75%;
+  right: 172px;
+}
+.slick-dots {
+  gap: 5px;
+}
+.quote-text-2 {
+  padding: 0 0 26px 0;
+}
+.mobile__menu ul li a {
+  font-size: 17px;
+}
+.mobile__menu ul li {
+  margin-bottom: 18px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .hero-title {
+    font-size: 31px;
+}
+.hero-text {
+  font-size: 12px;
+}
+.hero_section {
+  padding: 40px 0;
+}
+.scrolling-text {
+  font-size: 30px;
+}
+.change-title {
+  padding: 35px 0 17px 0px;
+  font-size: 30px;
+}
+button.slick-prev.slick-arrow {
+  left: 68%;
+}
+
+.featured_section {
+  padding: 60px 0px 20px;
+}
+.fs-50 {
+  font-size: 26px;
+}   
+ .seller-title {
+  padding-bottom: 20px;
+}
+.fs-24 {
+  font-size: 20px;
+}   
+ .seller-text {
+  padding-top: 22px;
+}
+.fs-24-light {
+  font-size: 16px;
+}
+.brand_section {
+  background: linear-gradient(360deg, #fff 48%, #e3e3d5 0);
+}
+.brand-title {
+  font-size: 30px !important;
+}
+.fs-16 {
+  font-size: 13px;
+  line-height: 20px;
+}
+.right::after {
+  right: 150px;
+}
+.seller_area {
+  padding-bottom: 38px;
+}
+.testimonial_section {
+  padding: 50px 0;
+}
+.fs-24-thin {
+  font-size: 12px;
+}
+.content-info {
+  padding: 18px;
+}
+.client {
+  width: 50px;
+  height: 70px;
+}
+.fs-28 {
+  font-size: 15px;
+}
+.client {
+  padding: 0 0 12px 0px;
+}
+.quote-text-2 {
+  padding: 0 0 3px 0;
+}
+.quote-text {
+  padding: 11px 0 46px 0;
+}
+.fs-80 {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+.contact_area {
+  margin-bottom: 65px;
+}
+.footer__section {
+  padding: 50px 0;
+}
+
 }
 
 
-@media (max-width:991px) {
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;  
-      }
-  
-}
-@media (max-width:425px) {
-    .sidebar{
-        width: 100%;
-    }
-    .fa-bars, .fa-xmark{
-        font-size: 20px;
-    }
 
-    
-}

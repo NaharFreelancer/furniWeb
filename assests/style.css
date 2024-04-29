@@ -139,7 +139,7 @@
 .slick-dots {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 10px;
   margin-top: 48px;
 }
 
@@ -187,7 +187,7 @@ li.slick-active {
   width: 100%;
   overflow: hidden;
   background-color: black; /* Black background color */
-  padding: 27px; /* Padding of 27px on all sides */
+  padding: 18px; /* Padding of 27px on all sides */
 }
 
 /* The scrolling text */
@@ -196,7 +196,7 @@ li.slick-active {
   color: var(--Neutral-08, #fff); /* Text color */
   text-align: center; /* Center-align text */
   font-family: Urbanist; /* Font family */
-  font-size: 60px; /* Font size */
+  font-size: 45px; /* Font size */
   font-style: italic; /* Font style */
   font-weight: 500; /* Font weight */
   line-height: normal; /* Line height */
@@ -282,13 +282,13 @@ button.slick-next.slick-arrow {
 }
 
 button.slick-next.slick-arrow:hover {
-  background: #4d4d4d;
+  background: #ffffff;
   border: none;
   color: #fff;
 }
 
 button.slick-prev.slick-arrow:hover {
-  background: #4d4d4d;
+  background: #fff;
   border: none;
   color: #fff;
 }
@@ -309,6 +309,7 @@ button.slick-prev.slick-arrow:hover {
   align-items: center;
   justify-content: space-between;
 }
+
 .feature-text {
   color: var(--Text-02, var(--Neutral-02, #4d4d4d));
   font-size: 20px;
@@ -333,6 +334,9 @@ button.slick-prev.slick-arrow:hover {
 .seller_section {
   padding: 100px 0 0px 0;
 }
+.seller_area {
+  padding-bottom: 65px;
+}
 .seller-text {
   padding-top: 36px;
 }
@@ -344,7 +348,9 @@ button.slick-prev.slick-arrow:hover {
   margin: 120px 0;
   padding: 62px 0;
 }
-
+.brand-info {
+  padding-left: 100px;
+}
 .brand-text {
   padding: 12px 0 32px 0;
 }
@@ -418,10 +424,13 @@ button.slick-prev.slick-arrow:hover {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 21px;
-  padding: 174px 0 174px 91px;
   margin-bottom: 120px;
 }
 .contact-btn {
-  margin-top: 32px;
+  margin: 0px 0 174px 91px;
 }
+.contact-title {
+  padding: 174px 0 32px 91px;
+}
+
 /* =======contact section css end ======*/
