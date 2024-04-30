@@ -317,6 +317,25 @@ button.slick-prev.slick-arrow:hover {
   line-height: 34px; /* 170% */
   padding: 46px 0 20px 0;
 }
+.feature-img{
+  /* max-width: 574px; */
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 51px; */
+}
+.feature-img img{
+  /* border-radius: 51px; */
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.feature-img img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  
+}
+
+
 .feature-card {
   position: relative;
 }
@@ -354,6 +373,24 @@ button.slick-prev.slick-arrow:hover {
 .brand-text {
   padding: 12px 0 32px 0;
 }
+.brand-img{
+  /* max-width: 574px; */
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 51px; */
+}
+.brand-img img{
+  /* border-radius: 51px; */
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.brand-img img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  
+}
+
 .counter-text {
   padding: 10px 0 32px 0;
 }
@@ -432,5 +469,7 @@ button.slick-prev.slick-arrow:hover {
 .contact-title {
   padding: 174px 0 32px 91px;
 }
+
+
 
 /* =======contact section css end ======*/
