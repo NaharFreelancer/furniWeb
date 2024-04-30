@@ -373,19 +373,36 @@ button.slick-prev.slick-arrow:hover {
 .brand-text {
   padding: 12px 0 32px 0;
 }
-.brand-img{
+.brand-img-1{
   /* max-width: 574px; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   /* border-radius: 51px; */
 }
-.brand-img img{
+.brand-img-1 img{
   /* border-radius: 51px; */
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.brand-img img:hover{
+.brand-img-1 img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  
+}
+.brand-img-2{
+  /* max-width: 574px; */
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 51px; */
+}
+.brand-img-2 img{
+  /* border-radius: 51px; */
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.brand-img-2 img:hover{
   transform: scale(1.2);
   cursor: pointer;
   
@@ -428,6 +445,10 @@ button.slick-prev.slick-arrow:hover {
 .tst-img {
   border-radius: 0 21px 21px 0;
 }
+.tst-img img{
+  height: 100%;
+
+}
 .quote {
   padding: 0px 0 6px 0px;
 }
@@ -441,7 +462,7 @@ button.slick-prev.slick-arrow:hover {
   border-radius: 21px 0 0 21px;
   background: #f7f7f7;
   padding: 60px 0 38px 32px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 .quote {
   padding-bottom: 40px;
