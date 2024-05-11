@@ -5,83 +5,7 @@
   );
   position: relative;
 }
-.header__section {
-  border-bottom: 1px solid #ede7e7;
-}
 
-/* =====Navbar Start =====*/
-.nav__bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 18px 0px;
-}
-.nav__middle a.active {
-  color: #181818;
-  font-weight: bold;
-}
-.nav__middle a:hover {
-  color: #181818;
-}
-.nav__middle ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav__middle ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #8e8e8e;
-}
-
-.nav__right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* menu bar */
-.menuIcon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.mobile__menu {
-  position: absolute;
-  height: 100vh;
-  background: #8e8e8e;
-  width: 50%;
-  top: 0;
-  left: 0;
-  padding: 40px;
-  transform: translateX(-100%);
-  transition: 0.5s ease-in-out;
-  z-index: 10;
-  position: fixed;
-}
-
-.open {
-  transform: translateX(0%);
-}
-
-.mobile__menu ul li {
-  margin-bottom: 25px;
-}
-
-.mobile__menu ul li a {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.crossBtn {
-  cursor: pointer;
-}
-
-/* =============navbar END=========== */
 /* =============hero section start=========== */
 .hero_section {
   /* background: var(--Linear-Color-02, linear-gradient(188deg, #F6F6EF 3.29%, #E9EADD 96.52%)); */
@@ -136,27 +60,8 @@
   left: 35%;
 }
 
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 48px;
-}
 
-.slick-dots li {
-  width: 10px;
-  height: 10px;
-  background: #d9d9d9;
-  border-radius: 50%;
-}
 
-.slick-dots button {
-  display: none;
-}
-
-li.slick-active {
-  background: #eff422 !important;
-}
 /* override css */
 .slick-dots li button:before {
   font-family: "slick";
@@ -334,7 +239,6 @@ button.slick-prev.slick-arrow:hover {
   cursor: pointer;
   
 }
-
 
 .feature-card {
   position: relative;

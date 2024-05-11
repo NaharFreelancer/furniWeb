@@ -23,23 +23,6 @@ crossBtn.addEventListener("click", function () {
   mobile__menu.classList.remove("open");
 });
 
-// function hideSidebar() {
-//     const sidebar = document.querySelector('.sidebar');
-//     sidebar.style.display = 'none';
-// }
-
-// // Hide the sidebar when the window is loaded
-// window.addEventListener('load', hideSidebar);
-
-// // Function to toggle the sidebar's visibility
-// function toggleSidebar() {
-//     const sidebar = document.querySelector('.sidebar');
-//     if (sidebar.style.display !== 'flex') {
-//         sidebar.style.display = 'flex';
-//     } else {
-//         sidebar.style.display = 'none';
-//     }
-// }
 // ========responsive menu js code/=====/
 
 // ========hero slider/=====/
@@ -89,12 +72,39 @@ if (storedText) {
   document.getElementById("scrollingText").innerHTML = storedText;
 }
 
-// Add an event listener to save the scrolling text content when it changes
-document.getElementById("scrollingText").addEventListener("input", function () {
-  var textContent = this.innerHTML;
-  localStorage.setItem("scrollingText", textContent);
+$(document).ready(function () {
+  // Add an event listener to save the scrolling text content when it changes
+  document
+    .getElementById("scrollingText")
+    .addEventListener("input", function () {
+      var textContent = this.innerHTML;
+      localStorage.setItem("scrollingText", textContent);
+    });
 });
+
 // ========marquee loop js/=====/
+
+
+// ========marquee loop js-2/=====/
+// Retrieve the scrolling text content from local storage
+var storedText = localStorage.getItem("scrollingText2");
+
+// Set the scrolling text content
+if (storedText) {
+  document.getElementById("scrollingText2").innerHTML = storedText;
+}
+
+$(document).ready(function () {
+  // Add an event listener to save the scrolling text content when it changes
+  document
+    .getElementById("scrollingText2")
+    .addEventListener("input", function () {
+      var textContent = this.innerHTML;
+      localStorage.setItem("scrollingText2", textContent);
+    });
+});
+
+// ========marquee loop js-2/=====/
 // ========change section slider/=====/
 
 $(".Change-slider").slick({
@@ -218,42 +228,74 @@ $(".testimonial-slider").slick({
 });
 // ========testimonial section slider end/=====/
 
+// ========about section slider start/=====/
+$(".about-hero-slider").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  centerPadding: "30px",
+  spaceBetween: 30,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+// ========about  section slider end/=====/
 
 ///---- counting animation start---///
 
 const counterUp = window.counterUp.default;
 
-const callback = entries => {
-    entries.forEach(entry => {
-        const el = entry.target;
-        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-            counterUp(el, {
-                duration: 2000,
-                delay: 16,
-            });
-            el.classList.add('is-visible');
-        }
-    });
+const callback = (entries) => {
+  entries.forEach((entry) => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+      counterUp(el, {
+        duration: 2000,
+        delay: 16,
+      });
+      el.classList.add("is-visible");
+    }
+  });
 };
 
 // Select all elements with the class 'counter'
-const elements = document.querySelectorAll('.counter');
+const elements = document.querySelectorAll(".counter");
 
 // Create an IntersectionObserver for each element
 const observers = [];
-elements.forEach(el => {
-    const observer = new IntersectionObserver(callback, { threshold: 1 });
-    observer.observe(el);
-    observers.push(observer);
+elements.forEach((el) => {
+  const observer = new IntersectionObserver(callback, { threshold: 1 });
+  observer.observe(el);
+  observers.push(observer);
 });
 
-
-
 ///---- counting animation end---///
-
-
-
-
 
 ///---- Scroll to Top start---///
 

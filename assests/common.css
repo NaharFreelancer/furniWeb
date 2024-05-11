@@ -39,6 +39,85 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+/* =====Navbar Start =====*/
+.header__section {
+  border-bottom: 1px solid #ede7e7;
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 0px;
+}
+.nav__middle a.active {
+  color: #181818;
+  font-weight: 600;
+}
+.nav__middle a:hover {
+  color: #181818;
+}
+.nav__middle ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__middle ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #8e8e8e;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* menu bar */
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  position: absolute;
+  height: 100vh;
+  background: #8e8e8e;
+  width: 50%;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  position: fixed;
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+.mobile__menu ul li {
+  margin-bottom: 25px;
+}
+
+.mobile__menu ul li a {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.crossBtn {
+  cursor: pointer;
+}
+
+/* =============navbar END=========== */
+
 .button {
   font-size: 18px;
   font-weight: 600;
@@ -101,19 +180,17 @@ a {
   justify-content: center;
   border-radius: 50%;
 }
-.yellow{
+.yellow {
   background-color: #eff422;
   color: #181818;
   border: 1px solid #eff422;
   border-radius: 100px;
   padding: 7px 20px;
-
 }
-button .yellow:hover{
-  background-color: #181818!important;
-  color: #fff!important;
-  border: 1px solid #181818!important;
-
+button .yellow:hover {
+  background-color: #181818 !important;
+  color: #fff !important;
+  border: 1px solid #181818 !important;
 }
 .fs-80 {
   color: var(--Secondary-color, var(--Neutral-01, #181818));
@@ -122,12 +199,22 @@ button .yellow:hover{
   font-weight: 600;
   letter-spacing: -2.4px;
 }
+.fs-60 {
+  color: var(--Secondary-color, var(--Neutral-01, #181818));
+  /* text-align: center; */
+  font-family: Urbanist;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%; /* 72px */
+  text-transform: uppercase;
+}
 .fs-50 {
   color: var(--Secondary-color, var(--Neutral-01, #181818));
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -1.5px;
   text-transform: uppercase;
+  font-family: Urbanist;
 }
 .fs-18 {
   color: var(--Secondary-color, var(--Neutral-01, #181818));
@@ -135,6 +222,13 @@ button .yellow:hover{
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+}
+.fs-18-thin {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
 }
 .fs-24 {
   color: var(--Neutral-01, #181818);
@@ -183,6 +277,33 @@ button .yellow:hover{
 }
 
 /* General Styles End */
+
+/* slick slider css start */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 48px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+.slick-dots button {
+  display: none;
+}
+
+li.slick-active {
+  background: #eff422 !important;
+}
+.slick-dots li button:before {
+  display: none;
+}
+/* slick slider css end */
 
 /* width, height, and color of the scrollbar track */
 ::-webkit-scrollbar {
@@ -273,16 +394,16 @@ button .yellow:hover{
 }
 
 .footer-menu-2 .form-control {
-    /* -bs-border-radius: 10px; 
+  /* -bs-border-radius: 10px; 
     /* border: 1px solid var(--Text-Color-3, #b9b9b9); */
-    /* background: var(--Other-Color-6, #f1f4fc); */
-    color: #1E1E1E;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    padding: 0px 0px 0px 24px;
-    margin: 10px 0;
-    max-width: 350px;
+  /* background: var(--Other-Color-6, #f1f4fc); */
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 0px 0px 0px 24px;
+  margin: 10px 0;
+  max-width: 350px;
 }
 
 .form-control:focus {
@@ -328,5 +449,5 @@ button .yellow:hover{
   white-space: nowrap;
 }
 .send:hover {
-  color: #12182B;
+  color: #12182b;
 }
