@@ -74,16 +74,13 @@ if (storedText) {
 
 $(document).ready(function () {
   // Add an event listener to save the scrolling text content when it changes
-  document
-    .getElementById("scrollingText")
-    .addEventListener("input", function () {
-      var textContent = this.innerHTML;
-      localStorage.setItem("scrollingText", textContent);
-    });
+  $("#scrollingText").on("input", function () {
+    var textContent = $(this).text(); // or .html() depending on the element type
+    localStorage.setItem("scrollingText", textContent);
+  });
 });
 
 // ========marquee loop js/=====/
-
 
 // ========marquee loop js-2/=====/
 // Retrieve the scrolling text content from local storage
@@ -96,12 +93,10 @@ if (storedText) {
 
 $(document).ready(function () {
   // Add an event listener to save the scrolling text content when it changes
-  document
-    .getElementById("scrollingText2")
-    .addEventListener("input", function () {
-      var textContent = this.innerHTML;
-      localStorage.setItem("scrollingText2", textContent);
-    });
+  $("#scrollingText2").on("input", function () {
+    var textContent = $(this).html(); // Use jQuery to get inner HTML
+    localStorage.setItem("scrollingText2", textContent);
+  });
 });
 
 // ========marquee loop js-2/=====/
@@ -218,7 +213,7 @@ $(".testimonial-slider").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -323,3 +318,196 @@ scrollToTopBtn.addEventListener("click", function () {
 });
 
 ///---- Scroll to Top end---///
+
+// ========product section slider/=====/
+
+$(".product-slider").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  // centerPadding: "30px",
+
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+    '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left-long"></i></button>',
+  nextArrow:
+    '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right-long"></i></button>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+// ========product section slider/=====/
+
+var MainImg = document.getElementById("MainImg");
+var smallimg = document.getElementsByClassName("small-img");
+
+smallimg[0].onclick = function () {
+  MainImg.src = smallimg[0].src;
+};
+smallimg[1].onclick = function () {
+  MainImg.src = smallimg[1].src;
+};
+smallimg[2].onclick = function () {
+  MainImg.src = smallimg[2].src;
+};
+smallimg[3].onclick = function () {
+  MainImg.src = smallimg[3].src;
+};
+
+// var MainImg = document.getElementById("MainImg");
+// var smallimg = document.getElementsByClassName("small-img");
+
+for (var i = 0; i < smallimg.length; i++) {
+  smallimg[i].onclick = function (event) {
+    MainImg.src = event.target.src;
+
+    // Remove border from all small-img elements
+    for (var j = 0; j < smallimg.length; j++) {
+      smallimg[j].classList.remove("selected");
+    }
+
+    // Add border to the clicked small-img
+    this.classList.add("selected");
+  };
+}
+
+// ========product section slider bottom content/=====/
+
+// ========read more js code start/=====/
+function showMore() {
+  var moreText = document.getElementById("more");
+  var moreLink = document.getElementById("read-more-link");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    moreLink.innerHTML = "Read Less...";
+  } else {
+    moreText.style.display = "none";
+    moreLink.innerHTML = "Read More...";
+  }
+}
+// ========read more js code end/=====/
+
+// ========increment decrement js code start/=====/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var element = document.getElementById("count");
+  var increment = document.getElementById("plus");
+  var decrement = document.getElementById("minus");
+
+  // Initial counter value
+  var count = 0;
+
+  // Event listener for increment button
+  increment.addEventListener("click", function () {
+    count++;
+    element.textContent = count;
+  });
+
+  // Event listener for decrement button
+  decrement.addEventListener("click", function () {
+    count--;
+    element.textContent = count;
+  });
+});
+
+// ========increment decrement js code end/=====/
+// ========love react js code start/=====/
+
+function toggleLove() {
+  var heartIcon = document.getElementById("heartIcon");
+
+  if (heartIcon.classList.contains("far")) {
+    heartIcon.classList.remove("far");
+    heartIcon.classList.add("fas"); // Change the icon to filled heart
+  } else {
+    heartIcon.classList.remove("fas");
+    heartIcon.classList.add("far"); // Change the icon to hollow heart
+  }
+}
+// ========love react js code end/=====/
+// ========color change js code start/=====/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var colorButtons = document.querySelectorAll(".color-select");
+
+  colorButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      colorButtons.forEach(function (btn) {
+        btn.classList.remove("color-selected-active");
+      });
+
+      // Add active class to clicked button
+      button.classList.add("color-selected-active");
+    });
+  });
+});
+// ========color change js code end/=====/
+
+// ========related product section slider js start/=====/
+
+$(".related-product-slider").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  // centerPadding: "30px",
+
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow:
+    '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left-long"></i></button>',
+  nextArrow:
+    '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right-long"></i></button>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+// ========related product section slider js end/=====/

@@ -94,7 +94,7 @@ a {
   padding: 40px;
   transform: translateX(-100%);
   transition: 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 9999;
   position: fixed;
 }
 
@@ -163,6 +163,12 @@ a {
   padding: 10px 30px;
   border: 1px solid var(--Neutral-01, #181818);
 }
+.btn_light_gray {
+  background: none;
+  color: #181818;
+  padding: 10px 30px;
+  border: 1px solid var(--Neutral-01, #d9d9d9);
+}
 .btn_white {
   padding: 10px 20px;
   background-color: #fff;
@@ -213,7 +219,6 @@ button .yellow:hover {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -1.5px;
-  text-transform: uppercase;
   font-family: Urbanist;
 }
 .fs-18 {
@@ -229,6 +234,24 @@ button .yellow:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 150%; /* 27px */
+}
+.fs-18-500 {
+  color: var(--Secondary-color, #181818);
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fs-18-500-gray {
+  color: var(--Text-01, #8e8e8e);
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
 }
 .fs-24 {
   color: var(--Neutral-01, #181818);
@@ -274,6 +297,22 @@ button .yellow:hover {
   color: var(--Secondary-color, var(--Neutral-01, #181818));
   font-size: 20px;
   font-weight: 400;
+}
+.fs-40 {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  font-family: Urbanist;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+}
+.fs-22 {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 22.188px;
+  font-weight: 400;
+  line-height: 37.719px; /* 170% */
 }
 
 /* General Styles End */
@@ -451,3 +490,42 @@ li.slick-active {
 .send:hover {
   color: #12182b;
 }
+
+/* =======contact section css start ======*/
+.contact_section {
+  margin-top: 120px;
+}
+.contact_area {
+  background-image: url(../images/contact-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  margin-bottom: 120px;
+}
+.contact-btn {
+  margin: 0px 0 174px 91px;
+}
+.contact-title {
+  padding: 174px 0 32px 91px;
+}
+/* =======contact section css end ======*/
+/* =======zoom img  css start ======*/
+
+.zoom-img {
+  /* max-width: 574px; */
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 51px; */
+}
+.zoom-img img {
+  /* border-radius: 51px; */
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.zoom-img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* =======zoom img  css end ======*/

@@ -60,8 +60,6 @@
   left: 35%;
 }
 
-
-
 /* override css */
 .slick-dots li button:before {
   font-family: "slick";
@@ -222,22 +220,21 @@ button.slick-prev.slick-arrow:hover {
   line-height: 34px; /* 170% */
   padding: 46px 0 20px 0;
 }
-.feature-img{
+.feature-img {
   /* max-width: 574px; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   /* border-radius: 51px; */
 }
-.feature-img img{
+.feature-img img {
   /* border-radius: 51px; */
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.feature-img img:hover{
+.feature-img img:hover {
   transform: scale(1.2);
   cursor: pointer;
-  
 }
 
 .feature-card {
@@ -277,39 +274,37 @@ button.slick-prev.slick-arrow:hover {
 .brand-text {
   padding: 12px 0 32px 0;
 }
-.brand-img-1{
+.brand-img-1 {
   /* max-width: 574px; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   /* border-radius: 51px; */
 }
-.brand-img-1 img{
+.brand-img-1 img {
   /* border-radius: 51px; */
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.brand-img-1 img:hover{
+.brand-img-1 img:hover {
   transform: scale(1.2);
   cursor: pointer;
-  
 }
-.brand-img-2{
+.brand-img-2 {
   /* max-width: 574px; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   /* border-radius: 51px; */
 }
-.brand-img-2 img{
+.brand-img-2 img {
   /* border-radius: 51px; */
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.brand-img-2 img:hover{
+.brand-img-2 img:hover {
   transform: scale(1.2);
   cursor: pointer;
-  
 }
 
 .counter-text {
@@ -340,36 +335,39 @@ button.slick-prev.slick-arrow:hover {
 /* =======testimonial section css start ======*/
 
 .testimonial_section {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 .testimonial-title {
   text-align: center;
   padding-bottom: 70px;
+  text-transform: uppercase;
+}
+.testimonial-slider {
+  margin-bottom: 100px;
 }
 .tst-img {
   border-radius: 0 21px 21px 0;
 }
-.tst-img img{
-  height: 100%;
-
+.tst-img img {
+  height: 100% !important;
 }
 .quote {
   padding: 0px 0 6px 0px;
 }
 .quote-text {
-  padding: 0 0 69px 0;
+  padding: 0 0 29px 0;
 }
 .quote-text-2 {
-  padding: 0 0 34px 0;
+  padding: 0 0 29px 0;
 }
 .content-info {
   border-radius: 21px 0 0 21px;
   background: #f7f7f7;
-  padding: 60px 0 38px 32px;
-  /* margin-bottom: 100px; */
+  padding: 63px 13px 56px 32px;
+  height: 100%;
 }
 .quote {
-  padding-bottom: 40px;
+  padding-bottom: 59px;
 }
 .client {
   padding: 0 0 40px 0px;
@@ -378,23 +376,537 @@ button.slick-prev.slick-arrow:hover {
   padding-bottom: 10px;
 }
 
+.testimonial-slider .slick-list {
+  padding-bottom: 70px;
+}
+
 /* =======testimonial section css end ======*/
-/* =======contact section css start ======*/
-.contact_area {
-  background-image: url(../images/contact-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =======about page  css start ======*/
+.about_section {
+  background: linear-gradient(180deg, #fff 42%, #e3e3d5 0);
+  padding: 120px 0;
+}
+
+.about-title {
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+.title-text {
+  padding-bottom: 53px;
+}
+.rating__section {
+  padding-top: 120px;
+}
+.fa-star.checked {
+  color: #f0ad4e;
+}
+.fa-star {
+  color: #b1b1b1;
+  height: 21px;
+  width: 21px;
+}
+.rating-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.rating_title {
+  font-size: 49px;
+}
+.about-rating {
+  padding: 8px 0 18px 0;
+}
+.rating-text {
+  padding-top: 12px;
+  font-weight: 500;
+}
+.review-text {
+  padding: 24px 0 48px 0;
+}
+.review-parent {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+}
+
+/* about hero end */
+/* Add custom styles for the thumbnail */
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflowing play icon during animation */
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 3em;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  /* padding: 10px 20px;
+  text-align: center; */
+  animation: bounceAndFade 3s ease-in-out infinite;
+}
+
+@keyframes bounceAndFade {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* .video-thumbnail:hover img {
+  transform: scale(1.1);
+} */
+
+.modal-lg,
+.modal-xl {
+  --bs-modal-width: 595px;
+}
+
+.iframeClass {
+  border: 0;
+  height: 330px !important;
+  width: 560px !important;
+}
+
+/* video-section section end */
+/* progress-section section start */
+.progress-section {
+  padding: 120px 0;
+}
+.progress-text {
+  padding-top: 24px;
+}
+
+.progress-bar.rounded {
+  border-radius: 20px; /* Adjust the border-radius as needed */
+  animation: progressAnimation 3s ease forwards;
+}
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+}
+.progress {
+  margin-bottom: 48px;
+}
+.progress:last-child {
+  margin-bottom: 0;
+}
+.progress_heading {
+  padding-bottom: 12px;
+}
+.progress,
+.progress-stacked {
+  border-radius: 100px;
+  background: #eee;
+  --bs-progress-height: 5px;
+}
+.progress-bar.rounded {
+  animation: progressAnimation 3s ease forwards;
+}
+.rounded {
+  border-radius: 100px !important;
+}
+.progress-bar {
+  background-color: #9aab88 !important;
+}
+.heading-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* progress-section section end */
+/* quality-section section start */
+.quality-section {
+  padding: 100px 0;
+  background: #e3e3d5;
+}
+.quality-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quality-heading {
+  text-align: center;
+  padding-bottom: 97px;
+}
+.quality-text {
+  text-align: center;
+  padding-top: 24px;
+}
+/* quality-section section end */
+/* team-section section satart */
+.team-section {
+  padding: 120px 0 125px 0;
+}
+.team-title {
+  padding-bottom: 32px;
+  text-align: center;
+}
+.member-name {
+  text-align: center;
+  padding: 24px 0 6px 0;
+}
+.member-designation {
+  text-align: center;
+}
+/* team-section section end */
+/* =========marquee looping css start =========*/
+
+/* Container to hold the scrolling text */
+.scrolling-text-container2 {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+/* The scrolling text */
+.scrollingText2 {
+  color: #d9d9d9;
+  font-family: Urbanist;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6.958px;
+  text-transform: uppercase;
+  animation: scrollText 20s linear infinite; /* Adjust duration for slower animation */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*========= marquee looping css end =====*/
+
+/* =======about page  css end ======*/
+
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* =======shop page  css start ======*/
+.product-page-section {
+  padding: 113px 0 65px 0;
+}
+.product-page-area {
+  text-align: center;
+}
+
+/* =============== */
+/* tab css start here */
+.category-title {
+  padding-bottom: 24px;
+}
+.btn-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-title {
+  padding: 36px 0 16px 0;
+}
+
+.product-content {
+  margin-top: 48px;
+}
+
+/* tab css end here */
+/* pagination css start here */
+.pagination-section {
+  margin: 60px 0 120px 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  --bs-pagination-active-bg: #eff422;
+}
+.active > .page-link,
+.page-link.active {
+  color: #181818;
+}
+.page-link {
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #1a1a1a;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* pagination css end here */
+/* =======shop page  css end ======*/
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* =======shop page details  css start ======*/
+
+.product-details-section {
+  padding: 100px 0 76px 0;
+}
+.product-slider button.slick-next.slick-arrow {
+  right: 14px;
+  position: absolute;
+  top: 340px;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #181818;
+}
+.product-slider button.slick-prev.slick-arrow {
+  position: absolute;
+  left: 2%;
+  top: 340px;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #181818;
+}
+.small-img-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.small-img.selected {
+  border: 2px solid #d9d9d9; /* Add border to the selected small-img */
+}
+.product-description-section {
   border-radius: 21px;
-  margin-bottom: 120px;
+  border: 1px solid var(--Color-04, #eee);
+  background: var(--Neutral-08, #fff);
+  padding: 44px;
 }
-.contact-btn {
-  margin: 0px 0 174px 91px;
+.description-title {
+  padding-bottom: 32px;
 }
-.contact-title {
-  padding: 174px 0 32px 91px;
+.description-sub {
+  padding-bottom: 34px;
+}
+.description-text {
+  padding-bottom: 63px;
 }
 
+.description-content {
+  padding-bottom: 22px;
+}
+#read-more-link {
+  color: var(--Text-02, var(--Neutral-02, #4d4d4d));
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+}
 
+.cart-parent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 100px;
+}
+/* CSS for color container start */
 
-/* =======contact section css end ======*/
+.color-parent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 63px;
+}
+.color-parent button {
+  background-color: #a89f98;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#color2 {
+  background-color: #7e4f39;
+}
+
+#color3 {
+  background-color: #c77b45;
+}
+
+/* .color-select {
+  border: 2px solid #000;
+} */
+
+.color-select {
+  border: 2px solid transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.selected {
+  border-color: #181818; /* Change this to your desired border color */
+}
+
+.color-selected-active {
+  border: 2px solid #000;
+}
+/* CSS for counter container start */
+.counter_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 30px;
+  background: var(--Color-02, #f9f9f9);
+  padding: 10px 8px;
+}
+.cart-parent button.btn_dark {
+  padding: 18px 89px;
+}
+
+/* CSS for buttons */
+.counter_btn button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #181818;
+  border-radius: 100px;
+  outline: none;
+}
+
+#count {
+  font-size: 26px;
+  margin: 0;
+}
+
+/* love react button */
+#loveButton {
+  width: 60px;
+  height: 60px;
+  padding: 21px;
+  border-radius: 32.5px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for heart shape */
+.heartIcon {
+  display: none;
+}
+
+.fas {
+  color: red; /* Change the color to red */
+}
+.regularButton {
+  font-size: 18px;
+}
+.product-slider .slick-track {
+  gap: 0 !important;
+}
+
+/* love react button css end */
+
+.happy-section {
+  background-color: #e3e3d5;
+  padding: 84px 0;
+}
+.happy-title {
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.happy-text {
+  padding-bottom: 40px;
+}
+.product-dtls-img-sec {
+  padding-top: 32px;
+}
+.related-title {
+  padding-bottom: 29px;
+}
+.related-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.underline-border {
+  width: 135px;
+  height: 2px;
+  background: #000;
+  margin: auto;
+  margin-bottom: 48px;
+}
+.related-section {
+  padding: 100px 0 ;
+}
+.related-content {
+  padding: 40px 0 11px 0;
+}
+
+.related-product-slider button.slick-next.slick-arrow {
+  right: 0px;
+  top: -49px;
+  background: #ffffff;
+  border: 1px solid #D9D9D9;
+  color: #000;
+}
+.related-product-slider button.slick-prev.slick-arrow{
+  right: 13px;
+  top: -49px;
+  background: #ffffff;
+  border: 1px solid #D9D9D9;
+  color: #000;
+
+}
+
+/* =======shop page details  css end ======*/
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
