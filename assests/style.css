@@ -907,6 +907,142 @@ button.slick-prev.slick-arrow:hover {
 /* =======shop page details  css end ======*/
 /* ================================= */
 /* ================================= */
+/* =======blog page details  css start ======*/
+.blog-page-section{
+  padding-top: 110px ;
+}
+.blog-title{
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.blog-content-title{
+  padding: 30px 0 18px 0;
+}
+.blog-content-text{
+  padding-bottom: 51px;
+}
+.blog-img{
+  position: relative;
+}
+.btn_WHITE{
+  position: absolute;
+  top: 27px;
+  left: 27px;
+  z-index: 20;
+}
+
+/* =======blog page   css end ======*/
+/* ================================= */
+/* =======blog page details  css start ======*/
+
+.blog-details-section{
+  padding: 110px 0;
+ 
+}
+.blog-details-title{
+  padding: 34px 0;
+  text-align: center;
+}
+.blog-details-content{
+  padding: 72px 0 0 0;
+}
+.blog-details-content-two{
+  padding: 45px 0 45px 23px;
+  position: relative;
+
+}
+.side-border{
+  background: #E3E3D5;
+  width: 6px;
+  height: 99px;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 30;
+}
+.blog-details-content-three{
+  padding-bottom: 72px;
+}
+.blog-details-title-two{
+  padding: 50px 0 15px 0;
+}
+.border-bottom{
+  border-bottom: 3px solid #D9D9D9!important;
+  padding: 56px 0;
+
+}
+.prev-next-button-parent{
+  padding-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prev-next-button-parent .button{
+  color: #747474;
+  font-size: 18px;
+  font-weight: 400;
+}
+.prev-next-button-parent .light_yellow{
+border: 1px solid #EFF422;
+}
+/* =======blog page details  css end ======*/
 /* ================================= */
 /* ================================= */
-/* ================================= */
+
+/* =======contact css end ======*/
+
+.contact-us-section{
+  background-image: url(../images/contact-us-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 100px 0;
+  padding: 100px 0;
+
+}
+
+/* */
+.contact-info-row{
+display: flex;
+justify-content: space-between;
+}
+.contact-us-title{
+  color: #fff;
+  text-align: center;
+}
+.contact-info-title{
+  color: #fff;
+  padding-bottom: 32px;
+}
+.contact-address{
+  color: #AFAFAF;
+  font-family: Urbanist;
+  padding-bottom: 11px;
+  font-weight: 400;
+
+}
+.address-description{
+  font-weight: 400;
+  color: #fff;
+  font-family: Urbanist;
+  padding-bottom: 46px;
+}
+.contact-wrap{
+  padding: 120px 0;
+}
+.form-title{
+  text-align: center;
+  padding-bottom: 135px;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid #BBB;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 64px;
+}
+.messege-button{
+  text-align: center;
+}
+/* =======contact css start ======*/
+

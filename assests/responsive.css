@@ -303,8 +303,71 @@
   padding: 70px 0;
 }
   /* ==================================== */
+  .blog-page-section {
+    padding-top: 80px;
+}
+.blog-content-title {
+  padding: 22px 0 13px 0;
+}
+.fs-34 {
+  font-size: 24px;
+}
+.blog-content-text {
+  padding-bottom: 30px;
+}
+.fs-20-thin{
+  font-size: 16px;
+}
+.contact_section {
+  margin-top: 100px;
+}
   /* ==================================== */
-
+  .blog-details-section {
+    padding: 80px 0;
+} 
+.blog-details-title {
+  padding: 28px 0;
+}
+.blog-details-content {
+  padding: 60px 0 0 0;
+}
+.fs-29 {
+  font-size: 22px;
+  line-height: 40px;
+}
+.blog-details-content-two {
+  padding: 30px 0 30px 20px;
+}
+.side-border {
+  height: 90px;
+  top: 22px;
+}
+.blog-details-content-three {
+  padding-bottom: 60px;
+}
+.blog-details-title-two {
+  padding: 40px 0 15px 0;
+}
+.border-bottom {
+  padding: 30px 0;
+}
+/* ==================================== */
+.contact-us-section {
+  padding: 70px 0;
+  margin: 80px 0;
+}
+.contact-us-title {
+  padding-bottom: 70px;
+}
+.fs-40 {
+  font-size: 32px;
+}
+.contact-wrap {
+  padding: 0 0 80px 0 ;
+}
+.form-title {
+  padding-bottom: 80px;
+}
 }
 @media screen and (max-width: 768px) {
   .nav__bar {
@@ -519,7 +582,70 @@
 .related-section {
   padding: 60px 0;
 }
+/*==============================================  */
+.blog-page-section {
+  padding-top: 60px;
+}
+.blog-title {
+  padding-bottom: 45px;
+}
+/*==============================================  */
 
+.blog-details-section {
+  padding: 60px 0;
+}
+.blog-details-title {
+  padding: 22px 0;
+}
+.blog-details-content {
+  padding: 50px 0 0 0;
+}
+.fs-29 {
+  font-size: 17px;
+  line-height: 35px;
+}
+.blog-details-content-two {
+  padding: 20px 0 20px 15px;
+}
+.side-border {
+  height: 77px;
+  top: 16px;
+}
+.blog-details-content-three {
+  padding-bottom: 40px;
+}
+.border-bottom {
+  padding: 20px 0;
+}
+.prev-next-button-parent {
+  padding-top: 45px;
+}
+.btn_light_gray {
+  padding: 8px 22px;
+}
+  /* ================================ */
+  .contact-us-section {
+    padding: 60px 0;
+    margin: 60px 0;
+}
+.contact-info-title {
+  padding-bottom: 25px;
+}
+.address-description {
+  padding-bottom: 30px;
+}
+.fs-26{
+  font-size: 20px;
+}
+.form-title {
+  padding-bottom: 50px;
+}
+.form-control {
+  margin-bottom: 55px;
+}
+.contact-wrap {
+  padding: 0px 0 70px 0;
+}
 }
   /* ================================ */
   /* ================================ */
@@ -726,8 +852,80 @@
     padding: 25px 0 0px 0;
   }
   /* =========================================== */
+  .blog-page-section {
+    padding-top: 50px;
+}
+.blog-title {
+  padding-bottom: 30px;
+}
+.fs-34 {
+  font-size: 22px;
+}
+.fs-20-thin {
+  font-size: 14px;
+}
+.btn_WHITE {
+  padding: 8px 20px;
+  font-size: 14px;
+  top: 20px;
+  left: 20px;
+}
+/*====================================  */
+.blog-details-section {
+  padding: 50px 0;
+}
+.fs-29 {
+  font-size: 15px;
+  line-height: 30px;
+}
+.blog-details-content {
+  padding: 40px 0 0 0;
+}
+.side-border {
+  height: 85px;
+  top: 22px;
+}
+.blog-details-title-two {
+  padding: 34px 0 15px 0;
+}
+.btn_light_gray {
+  padding: 6px 18px;
+}
+/*====================================  */
+.contact-us-title {
+  padding-bottom: 50px;
+}
+.contact-info-row {
+  flex-direction: column;
+  gap: 60px;
+}
+.fs-26 {
+  font-size: 18px;
+}
+.address-description {
+  padding-bottom: 20px;
+}
+.contact-info-title {
+  padding-bottom: 20px;
+}
+.contact-us-section {
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.form-title {
+  padding-bottom: 38px;
+}
+.form-control {
+  margin-bottom: 45px;
+}
+.contact-wrap {
+  padding: 0px 0 50px 0;
+}
+
 
 }
+
+
 
 @media screen and (max-width: 375px) {
   .hero-title {
@@ -892,4 +1090,60 @@ button.slick-prev.slick-arrow {
   width: 38px;
   height: 38px;
 }
+/*====================================  */
+
+.blog-page-section {
+  padding-top: 40px;
 }
+.blog-title {
+  padding-bottom: 22px;
+}
+.fs-34 {
+  font-size: 20px;
+}
+.fs-20-thin {
+  font-size: 13px;
+}
+.blog-content-title {
+  padding: 20px 0 10px 0;
+}
+/*====================================  */
+.blog-details-section {
+  padding: 40px 0;
+}
+.blog-details-title {
+  padding: 18px 0;
+}
+.blog-details-content {
+  padding: 30px 0 0 0;
+}
+.blog-details-content-three {
+  padding-bottom: 30px;
+}
+.prev-next-button-parent {
+  padding-top: 38px;
+}
+.border-bottom {
+  padding: 15px 0;
+}
+/*====================================  */
+.contact-us-section {
+  padding: 40px 0;
+  margin: 40px 0;
+}
+.contact-us-title {
+  padding-bottom: 40px;
+}
+.fs-20 {
+  font-size: 16px;
+}
+.address-description {
+  padding-bottom: 17px;
+}
+.fs-26 {
+  font-size: 17px;
+}
+
+
+}
+
