@@ -417,6 +417,8 @@ button.slick-prev.slick-arrow:hover {
 }
 .rating_title {
   font-size: 49px;
+  text-transform: uppercase;
+  letter-spacing: 2;
 }
 .about-rating {
   padding: 8px 0 18px 0;
@@ -437,6 +439,17 @@ button.slick-prev.slick-arrow:hover {
 
 /* about hero end */
 /* Add custom styles for the thumbnail */
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.modal-header .close{
+  padding: 0 6px;
+  font-size: 20px;
+  border-color: yellow;
+}
+
 .video-thumbnail {
   position: relative;
   cursor: pointer;
@@ -554,6 +567,8 @@ button.slick-prev.slick-arrow:hover {
 .quality-heading {
   text-align: center;
   padding-bottom: 97px;
+  text-transform: uppercase;
+  letter-spacing: 2;
 }
 .quality-text {
   text-align: center;
@@ -1009,6 +1024,7 @@ justify-content: space-between;
 .contact-us-title{
   color: #fff;
   text-align: center;
+  padding-bottom: 103px;
 }
 .contact-info-title{
   color: #fff;
@@ -1028,7 +1044,7 @@ justify-content: space-between;
   padding-bottom: 46px;
 }
 .contact-wrap{
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 .form-title{
   text-align: center;

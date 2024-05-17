@@ -230,6 +230,7 @@ button .yellow:hover {
   font-weight: 600;
   letter-spacing: -1.5px;
   font-family: Urbanist;
+  
 }
 .fs-18 {
   color: var(--Secondary-color, var(--Neutral-01, #181818));
